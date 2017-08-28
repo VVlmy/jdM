@@ -1,0 +1,45 @@
+/*通用样式*/
+*,
+::before,
+::after{
+	font-size:14px;
+	/*sans-serif移动端默认字体*/
+	font-family: 'MicroSoft YaHei',sans-serif;
+	margin:0;
+	padding: 0;
+
+	/*点击清除默认的高亮效果*/
+	-webkit-tap-highlight-color:transparent;
+
+	/*盒子模型*/
+	/*样式输入完毕光标在后时tab快捷加内核兼容*/
+	-webkit-box-sizing: border-box;
+}
+/*input去掉默认样式*/
+input{
+	border:none;
+	-webkit-appearance: none;	
+}
+/*a标签的下划线*/
+a{
+	text-decoration: none;
+}
+/*去掉小圆点*/
+ol，ul{
+	list-style:none;
+}
+/*浮动，清除浮动*/
+.f_l{
+	float:left;
+}
+.f_r{
+	float:right;
+}
+.clearfix::before,
+.clearfix::after{
+	content:"";
+	display:block;
+	line-height: 0;
+	visibility: hidden;	
+	clear:both;
+}
