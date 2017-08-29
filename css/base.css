@@ -20,12 +20,12 @@ input{
 	border:none;
 	-webkit-appearance: none;	
 }
-/*a标签的下划线*/
+/*a标签的下划线*/s
 a{
 	text-decoration: none;
 }
 /*去掉小圆点*/
-ol，ul{
+ol,ul {
 	list-style:none;
 }
 /*浮动，清除浮动*/
