@@ -25,7 +25,7 @@ a{
 	text-decoration: none;
 }
 /*去掉小圆点*/
-ol，ul{
+ol,ul{
 	list-style:none;
 }
 /*浮动，清除浮动*/
