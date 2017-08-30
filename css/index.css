@@ -1,6 +1,7 @@
 /*最外层容器*/
 .jd_container{
 	width: 100%;
+	min-height: 800px;
 }
 /*顶部通栏start*/
 .jd_header{
@@ -8,7 +9,8 @@
 	height: 40px;
 	width: 100%;
 	background-color: rgb(201,21,35);
-	position: relative;
+	position: fixed;
+	z-index:99;
 
 	/*搜索框左右距父盒子的边距不随设备的分辨率变化而变化*/
 	/*给内边距把搜索框挤进去*/
@@ -58,3 +60,46 @@
 	font-size: 17px;
 }
 /*顶部通栏end*/
+/*顶部轮播图start*/
+.jd_banner{
+	width: 100%;
+	overflow: hidden;
+	/*为索引添加position*/
+	position: relative;
+}
+.jd_banner .banner_img{
+	/*共十张图片*/
+	width: 1000%;	
+}
+.jd_banner .banner_img li{
+	float: left;
+	/*父盒子的十分之一*/
+	width: 10%;
+	/*list-style: none;*/
+}
+.jd_banner .banner_img li a{
+	display: block;
+	width: 100%;
+}
+.jd_banner .banner_img li a img{
+	display: block;
+	width: 100%;
+}
+.jd_banner .banner_index{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -44px;
+}
+.jd_banner .banner_index li{
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border:1px solid white;
+	margin-left: 5px;
+}
+/*并集选择器 li中有current类的元素 之间没有空格*/
+.jd_banner .banner_index li.current{
+	background-color: white;
+/*顶部轮播图end
