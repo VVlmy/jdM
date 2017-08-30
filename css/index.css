@@ -2,7 +2,9 @@
 .jd_container{
 	width: 100%;
 	min-height: 800px;
+	background: #eee;
 }
+
 /*顶部通栏start*/
 .jd_header{
 
@@ -60,6 +62,7 @@
 	font-size: 17px;
 }
 /*顶部通栏end*/
+
 /*顶部轮播图start*/
 .jd_banner{
 	width: 100%;
@@ -102,4 +105,37 @@
 /*并集选择器 li中有current类的元素 之间没有空格*/
 .jd_banner .banner_index li.current{
 	background-color: white;
-/*顶部轮播图end
+}
+/*顶部轮播图end*/
+
+/*导航栏start*/
+.jd_nav{
+	width: 100%;
+	border-bottom: 1px solid #ccc ;
+	padding-bottom: 20px;
+	background-color: white;
+}
+.jd_nav ul{
+	width:100%;
+}
+.jd_nav ul li{
+	width: 25%;
+	float: left;
+	padding-top: 10px;
+}
+.jd_nav ul li a{
+	width: 100%;
+	display: block;
+}
+.jd_nav ul li a img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.jd_nav ul li a p{
+	color: gray;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/*导航栏end*/
