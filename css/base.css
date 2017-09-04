@@ -43,3 +43,16 @@ ol,ul {
 	visibility: hidden;	
 	clear:both;
 }
+/*边框的通用样式*/
+.b_l{
+	border-left: 1px solid #eee;
+}
+.b_r{
+	border-right: 1px solid #eee;
+}
+.b_t{
+	border-top: 1px solid #eee;
+}
+.b_b{
+	border-bottom: 1px solid #eee;
+}

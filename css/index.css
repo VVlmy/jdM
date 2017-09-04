@@ -1,4 +1,4 @@
-/*最外层容器*/
+最外层容器*/
 .jd_container{
 	width: 100%;
 	min-height: 800px;
@@ -139,3 +139,142 @@
 }
 
 /*导航栏end*/
+
+/*主要内容start*/
+.jd_main{
+	width: 100%;
+	padding: 0 5px;
+	margin-top:10px;
+
+}
+.jd_main .main_content{
+	width:100%;
+	background-color: white;
+	min-height: 150px;
+	margin-bottom: 10px;
+	/*盒子阴影 水平位移 垂直位移 模糊程度 颜色*/
+	box-shadow:0 0 2px gray;
+
+}
+.jd_main .main_content .content_top{
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #ccc;
+}
+.jd_main .main_content .content_bottom{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(1) .content_top{
+	border-bottom: none;
+}
+.jd_main .main_content:nth-child(1) .content_top span{
+	background-image: url(../images/seckill-icon.png);
+	-webkit-background-size: 20px 25px;
+	float: left;
+	width: 20px;
+	height: 25px;
+	margin: 3.5px 0 0 5px;
+}
+.jd_main .main_content:nth-child(1) .content_top p{
+	color: rgb(201,21,35);
+	margin-left: 5px;
+	line-height: 32px;
+	float: left;
+
+}
+.jd_main .main_content:nth-child(1) .content_top ul{
+	height: 32px;
+	padding-top: 8.5px;
+}
+.jd_main .main_content:nth-child(1) .content_top ul li{
+	float: left;
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	color: white;
+	margin-left:3px;
+	line-height: 15px;
+	text-align: center;
+}
+.jd_main .main_content:nth-child(1) .content_top ul li:nth-child(3n){
+	background-color: transparent;
+	color: black;
+}
+.jd_main .main_content:nth-child(1) .content_top a{	
+	color: gray;
+	line-height: 32px;
+	margin-right: 5px;
+}
+.jd_main .main_content:nth-child(1) .content_bottom {
+	width: 100%
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li{
+	float: left;
+	/*保证零头不形象布局*/
+	width: 33.33333%;	
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li a{
+	display: block;
+	width: 100%;
+	/*图片中间的竖线*/
+	border-right: 1px solid gray;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li:last-child a{
+	border-right:none;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li a img{
+	display: block;
+	/*压缩图片*/
+	width: 60%;
+	margin: 0 auto;
+}
+/*a标签与p标签平级 所以p从2开始*/
+.jd_main .main_content:nth-child(1) .content_bottom ul li p{
+	text-align: center;
+	padding-top: 3px;
+	font-size: 12px;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li p:nth-child(2){
+	color:rgb(201,21,35);
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li p:nth-child(3){
+	color:black;
+	text-decoration: line-through;
+}
+/*除开第一个的主要区域盒子*/
+.jd_main .main_content:nth-child(n+2) .content_top span{
+	color:rgb(201,21,35);
+	line-height: 32px;
+	margin-left: 15px;
+	position: relative;
+}
+.jd_main .main_content:nth-child(n+2) .content_top span::before{
+	content:'';
+	position: absolute;
+	height: 15px;
+	width: 5px;
+	background-color: rgb(201,21,35);
+	left: -10px;
+	top:8.5px;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li{
+	width: 50%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a{
+	width: 100%;
+	display: black;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a img{
+	width: 100%;
+	display: black;
+}
+/*主要内容end*/
