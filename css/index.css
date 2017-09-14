@@ -73,6 +73,7 @@
 .jd_banner .banner_img{
 	/*共十张图片*/
 	width: 1000%;	
+	transform: translateX(-10%);
 }
 .jd_banner .banner_img li{
 	float: left;
@@ -111,8 +112,7 @@
 /*导航栏start*/
 .jd_nav{
 	width: 100%;
-	border-bottom: 1px solid #ccc ;
-	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc ;	
 	background-color: white;
 }
 .jd_nav ul{
@@ -135,7 +135,7 @@
 .jd_nav ul li a p{
 	color: gray;
 	text-align: center;
-	padding-top: 5px;
+	padding: 5px 0;
 }
 
 /*导航栏end*/
